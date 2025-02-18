@@ -66,10 +66,10 @@
             <a class="nav-link" href="#"><img src="/static/images/search-icon.png"></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">SIGN IN</a>
+            <a class="nav-link" href="{% url 'contact' %}">SIGN IN</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">REGISTER</a>
+            <a class="nav-link" href="{% url 'register' %}">Register</a>
           </li>
         </ul>
       </div>
@@ -81,88 +81,88 @@
 
 
 
-{% block content %}
+  {% block content %}
 
-{% endblock %}
-
-
+  {% endblock %}
 
 
-    <!-- footer section start -->
-    <div class="section_footer ">
-        <div class="container">
-          <div class="footer_section_2">
-            <div class="row">
-              <div class="col-sm-6 col-md-6 col-lg-3">
-                <h2 class="account_text">Biz haqimizda</h2>
-                <p class="ipsum_text_2">dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quisdotempor
-                  incididunt r</p>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-3">
-                <h2 class="account_text">Foydali havolalar</h2>
-                <div class="useful_link">
-                  <ul>
-                    <li><a href="#">Video o'yinlar</a></li>
-                    <li><a href="#">Masofaviy boshqaruv</a></li>
-                    <li><a href="#">3D boshqaruvchi</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-3">
-                <h2 class="account_text">Biz bilan bog'lanish</h2>
-                <p class="ipsum_text_2">dolor sit amet, consectetur magna aliqua. quisdotempor incididunt ut e </p>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-3">
-                <h2 class="account_text">Yangiliklar</h2>
-                <input type="" class="email_text" placeholder="Emailingizni kiriting" name="Enter Your Email">
-                <button class="subscribr_bt">Obuna bo'lish</button>
-              </div>
+
+
+  <!-- footer section start -->
+  <div class="section_footer ">
+    <div class="container">
+      <div class="footer_section_2">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <h2 class="account_text">Biz haqimizda</h2>
+            <p class="ipsum_text_2">dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quisdotempor
+              incididunt r</p>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <h2 class="account_text">Foydali havolalar</h2>
+            <div class="useful_link">
+              <ul>
+                <li><a href="#">Video o'yinlar</a></li>
+                <li><a href="#">Masofaviy boshqaruv</a></li>
+                <li><a href="#">3D boshqaruvchi</a></li>
+              </ul>
             </div>
           </div>
-    
-          <div class="social_icon">
-            <ul>
-              <li><a href="#"><img src="/static/images/fb-icon.png"></a></li>
-              <li><a href="#"><img src="/static/images/twitter-icon.png"></a></li>
-              <li><a href="#"><img src="/static/images/linkdin-icon.png"></a></li>
-              <li><a href="#"><img src="/static/images/instagram-icon.png"></a></li>
-            </ul>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <h2 class="account_text">Biz bilan bog'lanish</h2>
+            <p class="ipsum_text_2">dolor sit amet, consectetur magna aliqua. quisdotempor incididunt ut e </p>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <h2 class="account_text">Yangiliklar</h2>
+            <input type="" class="email_text" placeholder="Emailingizni kiriting" name="Enter Your Email">
+            <button class="subscribr_bt">Obuna bo'lish</button>
           </div>
         </div>
       </div>
-      <!-- footer section end -->
-      <!-- copyright section start -->
-      <div class="copyright_section">
-        <div class="container">
-          <p class="copyright_text">Copyright 2020 All Right Reserved By <a href="https://html.design/"> Free html Templates
-          </p>
-        </div>
+
+      <div class="social_icon">
+        <ul>
+          <li><a href="#"><img src="/static/images/fb-icon.png"></a></li>
+          <li><a href="#"><img src="/static/images/twitter-icon.png"></a></li>
+          <li><a href="#"><img src="/static/images/linkdin-icon.png"></a></li>
+          <li><a href="#"><img src="/static/images/instagram-icon.png"></a></li>
+        </ul>
       </div>
-      <!-- copyright section end -->
-      <!-- Javascript files-->
-      <script src="/static/js/jquery.min.js"></script>
-      <script src="/static/js/popper.min.js"></script>
-      <script src="/static/js/bootstrap.bundle.min.js"></script>
-      <script src="/static/js/jquery-3.0.0.min.js"></script>
-      <script src="/static/js/plugin.js"></script>
-      <!-- sidebar -->
-      <script src="/static/js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="/static/js/custom.js"></script>
-      <!-- javascript -->
-      <script src="/static/js/owl.carousel.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-      <script>
-        $(document).ready(function () {
-          $(".fancybox").fancybox({
-            openEffect: "none",
-            closeEffect: "none"
-          });
-        });
-    
-      </script>
+    </div>
+  </div>
+  <!-- footer section end -->
+  <!-- copyright section start -->
+  <div class="copyright_section">
+    <div class="container">
+      <p class="copyright_text">Copyright 2020 All Right Reserved By <a href="https://html.design/"> Free html Templates
+      </p>
+    </div>
+  </div>
+  <!-- copyright section end -->
+  <!-- Javascript files-->
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/popper.min.js"></script>
+  <script src="/static/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/js/jquery-3.0.0.min.js"></script>
+  <script src="/static/js/plugin.js"></script>
+  <!-- sidebar -->
+  <script src="/static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="/static/js/custom.js"></script>
+  <!-- javascript -->
+  <script src="/static/js/owl.carousel.js"></script>
+  <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+      });
+    });
+
+  </script>
 
 
 
-    </body>
-    
-    </html>
+</body>
+
+</html>

@@ -10,7 +10,8 @@ def home_page(request):
     return render(request, 'index.html',{'games': games})
 
 # Create your views here.
-
+def register_page(request):
+    return render(request, 'register.html')
 
 def about_page(request):
     return render(request, 'about.html')

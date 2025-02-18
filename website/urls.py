@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from games.views import home_page, about_page, product_page, contact_page, remot_page, video_page
+from games.views import home_page, about_page, product_page, contact_page, remot_page, video_page, register_page
 
 from django.conf import settings
 from django.conf.urls.static import static
@@ -30,7 +30,8 @@ urlpatterns = [
     path('contact/', contact_page, name='contact'),
     path('remot/', remot_page, name='remot'),
     path('video/', video_page, name='video'),
-    path('', product_page, name='game_list')
+    path('', product_page, name='game_list'),
+    path('register/', register_page, name='register')
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
